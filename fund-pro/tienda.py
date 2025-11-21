@@ -62,15 +62,6 @@ def capturar_venta():
         except ValueError:
             print("Por favor, ingresa números válidos")
 
-def Get_YN(prompt):
-    """Solicita una respuesta Sí/No y valida la entrada"""
-    while True:
-        response = input(prompt).lower().strip()
-        if response in ('s', 'si', 'sí', 'y', 'yes'):
-            return True
-        elif response in ('n', 'no'):
-            return False
-        print("Por favor, ingresa 's' para Sí o 'n' para No")
 
 def mostrar_menu():
     """Muestra el menú de productos disponibles"""
